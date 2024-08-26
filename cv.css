@@ -1,0 +1,29 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 2;
+}
+.newline {
+    display: block;
+}
+img[alt=selfie] {
+    width: 250px;
+    margin: 50px;
+}
+.Wrapper {
+    display: flex;
+}
+main {
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.table {
+    width: 480px;
+}
+.fw-bold.text-uppercase.text-primary {
+    margin-top: 60px;
+}
+hr {
+    margin: 40px 0;
+}
