@@ -2,22 +2,22 @@ body {
     margin: 40px;
     background-color: #f0f0f0;
     user-select: none;
+    line-height: 2;
 }
 
-h2 {
+h2, h1, h3, h4 {
     font-family: 'Comfortaa', 'Fredoka', sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.Experience, .Wrapper, .Skills, .Objective, header {
+.Experience, .Qualifications, .Skills, .Objective, header {
     color: #333;
     margin: 60px auto;
     max-width: 900px;
     padding: 60px;
     background-color: #f5f5f5;
     border-radius: 60px;
-    line-height: 1.6;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -37,44 +37,31 @@ header img[alt=selfie] {
     float: left;
 }
 
-.content-container {
+.Qualifications {
     display: flex;
-    gap: 20px;
 }
 
-.table {
-    width: 100%;
-    color: #333;
-    border-collapse: collapse;
-    line-height: 3;
-}
-
-.Experience ul li {
-    margin-bottom: 10px;
-    color: #333;
-    line-height: 1.4;
-}
-
-.bold-span {
+.bold {
     font-weight: 700;
 }
-.fw-bold.text-uppercase.text-primary {
-    color: #333;
-    line-height: 1.4;
+
+.role {
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.Wrapper {
-    display: flex;
-    justify-content: space-between;
-    color: #333;
-    line-height: 1.5;
+.job {
+    margin: 20px auto;
 }
 
-h2.fw-bold.text-uppercase.text-primary {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: #333;
-    line-height: 1.4;
+.company {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title {
+    color: rgb(0, 132, 255);
+    margin-bottom: 15px;
 }
 
 h2 + ul li {
@@ -89,10 +76,6 @@ h2 + ul li {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
-
     .table {
         font-size: 14px;
         display: block;
@@ -120,5 +103,9 @@ h2 + ul li {
     body {
         zoom: 55%;
         font-weight: 200;
+    }
+
+    .Qualifications {
+        flex-direction: column;
     }
 }
