@@ -8,52 +8,72 @@
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka:wght@300..700&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cv.css">
 </head>
 <body>
-    <div class="justify-content-center d-flex bg-primary align-items-center text-white py-4">
-        <img src="selfie.jpg" alt="selfie" class="rounded-circle">
+    <header>
+        <img src="selfie.jpeg" alt="selfie">
         <div>
-            <h2 class="mb-0 fw-bold">AHMAD KHAIRUL SYAHMI <span class="newline">BIN AHMAD LATFI.</span></h2>
-            <p class="mb-0 fw-medium">Email:</p>
+            <h1 class="mb-3 fw-bold">AHMAD KHAIRUL SYAHMI <span class="newline">BIN AHMAD LATFI.</span></h1>
             <a href="mailto:khairul.syahmi@outlook.com" class="text-reset text-decoration-none fw-light">khairul.syahmi@outlook.com</a>
         </div>
-    </div>
+    </header>
 
     <main>
-
-        <div>
-            <h2 class="fw-bold mb-0 text-uppercase text-primary">Professional Experience.</h2><br>
-            <div class="Wrapper">
-                <div class="pe-5">
-                <h4 class="fw-bold">Arkitek FAA SDN BHD.<span class="newline fs-5 mt-2 fw-normal">Design Architect</span></h4>
-                <p class="mb-1">Job Responsibilites</p>
-                <ul>
-                    <li>Coordinate and collaborate with architects, engineers, M&E and other team members.</li>
-                    <li>Led multiple prominent large projects including office buildings, datacenter and lab facilities for tech companies, overseeing drafting and Revit modeling teams, ensuring timely delivery.</li>
-                    <li>Designed the main website for the company profile as a personal project for UI/UX exploration. <span><a class="newline text-reset text-decoration-none fw-light" href="https://www.arkitekfaa.com/">@ Arkitek FAA</a></span></li>
-                </ul>
+        <div class="Experience">
+            <h2 class="mb-0 text-uppercase text-primary">Professional Experience</h2><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>AHW Group.
+                        <span class="newline fs-5 mt-2 fw-normal">Junior Architect</span>
+                    </h4>
+                    <p class="mb-1 mt-4">Job Responsibilities</p>
+                    <ul>
+                        <li>Prepare detailed drawings, plans, and sketches based on specifications provided by architects, engineers, or clients.</li>
+                        <li>Ensure Revit models adhere to BIM (Building Information Modeling) standards and guidelines.</li>
+                    </ul>
                 </div>
-                <div>
-                <h4 class="fw-bold">AHW GROUP SDN BHD.<span class="newline fs-5 mt-2 fw-normal">Junior Architect</span></h4>
-                <p class="mb-1">Job Responsibilites</p>
-                <ul>
-                    <li>Prepare detailed drawings, plans, and sketches based on specifications provided by architects, engineers, or clients.</li>
-                    <li>Ensure Revit models adhere to BIM (Building Information Modeling) standards and guidelines.</li>
-                </ul>
+                <div class="col-md-4">
+                    <h4>Arkitek FAA.
+                        <span class="newline fs-5 mt-2 fw-normal">Design Architect</span>
+                    </h4>
+                    <p class="mb-1 mt-4">Job Responsibilities</p>
+                    <ul>
+                        <li>Coordinate and collaborate with architects, engineers, M&E and other team members.</li>
+                        <li>Led multiple prominent large projects including office buildings, datacenter and lab facilities for tech companies, overseeing drafting and Revit modeling teams, ensuring timely delivery.</li>
+                        <li>Designed the main website for the company profile as a personal project for UI/UX exploration.
+                            <span>
+                                <a class="newline text-reset text-decoration-none fw-light" href="https://www.arkitekfaa.com/">@ Arkitek FAA</a>
+                            </span>
+                        </li>
+                    </ul>
                 </div>
+                <div class="col-md-4">
+                    <h4>DahReply.
+                        <span class="newline fs-5 mt-2 fw-normal">Backend Software Engineering Intern</span>
+                    </h4>
+                    <p class="mb-1 mt-4">Job Responsibilities</p>
+                    <ul>
+                        <li>API Development and Integration using Fast API Python framework to support frontend features.</li>
+                        <li>Designed endpoints to handle CRUD operations efficiently.</li>
+                        <li>Created and optimized database schemas using MySQL or NoSQL cosmosDB on Azure databases.</li>
+                        <li>Implemented core application logic to handle business requirements.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <hr>
 
         <div class="Wrapper">
             <div class="pe-5">
-            <h2 class="mt-0 mb-3 fw-bold text-uppercase text-primary">Educational Qualifications</h2>
+            <h2 class="mt-0 mb-4 text-uppercase text-primary">Educational Qualifications</h2>
             <table class="table">
                 <tr>
-                    <th style="text-align: left; width: 40%;">Qualifications</th>
+                    <th style="text-align: left; width: 45%;">Qualifications</th>
                     <th style="width: 20%;">Board</th>
-                    <th style="width: 30%;">Percentage / Grades</th>
+                    <th style="width: 25%;">Grades</th>
                     <th style="width: 10%;">Year</th>
                 </tr>
                 <tr>
@@ -76,8 +96,9 @@
                 </tr>
             </table>
             </div>
+
             <div>
-            <h2 class="mt-0 mb-3 fw-bold text-uppercase text-primary">Independent Courses</h2>
+            <h2 class="mt-0 mb-4 text-uppercase text-primary">Independent Courses</h2>
                 <ul>
                     <li>Foundation Certificate in Software Engineering - Fundamental of Javascript - TalentLabs</li>
                     <li>Foundation Certificate in Software Engineering - Fundamental of SQL - TalentLabs</li>
@@ -87,77 +108,102 @@
             </div>
         </div>
 
-        <hr>
-
-        <div>
-            <h2 class="mt-0 mb-3 fw-bold text-uppercase text-primary">Technical Skills</h2>
+        <div class="Skills">
+            <h2 class="mt-0 mb-3 text-uppercase text-primary">Technical Skills</h2>
                 <div class="skills-container">
                 <ul>
-                    <li><span class="mb-2 fw-bold text-uppercase">Operating Systems:</span> Windows 7, windows XP, windows 10, windows 11</li>
-                    <li class="mb-2 fw-bold text-uppercase">Application Software:</li> 
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="mb-4 text-uppercase">Application Software</div> 
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-12 bg-primary rounded-pill">Microsoft Words
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-12 bg-primary rounded-pill">Microsoft Excel
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-12 bg-primary rounded-pill">Microsoft Powerpoint
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-10 bg-primary rounded-pill">Adobe Creative Cloud
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-9 bg-primary rounded-pill">Rhinoceros 3D
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-6 bg-primary rounded-pill">Grasshopper 3D
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-11 bg-primary rounded-pill">Autodesk Revit
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-12 bg-primary rounded-pill">Autodesk Naviswork
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-11 bg-primary rounded-pill">AutoCAD
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
-                        <div class="col-11 bg-primary rounded-pill">AutoCAD
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-11 bg-primary rounded-pill">D5 Render
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-12 bg-primary rounded-pill">Trimble Sketchup
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-12 bg-primary rounded-pill">Chaos V-Ray
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
                         <div class="col-8 bg-primary rounded-pill">Blender
                         </div>
                     </div>
-                    <li class="mb-2 fw-bold text-uppercase">Programming Skills:</li>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
-                        <div class="col-11 bg-primary rounded-pill">HTML / CSS
+                    <div class="mb-4 mt-4 text-uppercase">Programming Skills</div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-12 bg-primary rounded-pill">HTML / CSS
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
-                        <div class="col-8 bg-primary rounded-pill">Javascript
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-10 bg-primary rounded-pill">Javascript
                         </div>
                     </div>
-                    <div class="row border mb-2 border-dark text-white fw-bold rounded-pill">
-                        <div class="col-12 bg-primary rounded-pill">SQL
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-8 bg-primary rounded-pill">- React.js
+                        </div>
+                    </div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-5 bg-primary rounded-pill">- three.js
+                        </div>
+                    </div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-11 bg-primary rounded-pill">Python
+                        </div>
+                    </div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-7 bg-primary rounded-pill">- REST API Framework
+                        </div>
+                    </div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-10 bg-primary rounded-pill">- FastAPI Framework
+                        </div>
+                    </div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-12 bg-primary rounded-pill">mySQL
+                        </div>
+                    </div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-12 bg-primary rounded-pill">noSQL (cosmosDB)
+                        </div>
+                    </div>
+                    <div class="row border mb-2 border-dark text-white  rounded-pill">
+                        <div class="col-12 bg-primary rounded-pill">RAG (botpress, typebot, dify.ai)
                         </div>
                     </div>
                 </ul>
