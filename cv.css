@@ -99,11 +99,26 @@ h2 + ul li {
         overflow-x: auto;
     }
 
-    header {
-        font-size: 65%;
+    .bold-span {
+        font-weight: 500;
     }
-    
+
+    header {
+        font-size: 60%;
+        line-height: 2;
+        overflow: auto;
+    }
+
+    header h1 {
+        font-size: 17px;
+    }
+
+    .Experience, .Wrapper, .Skills, .Objective, header {
+    overflow: auto;
+    }
+
     body {
         zoom: 55%;
+        font-weight: 200;
     }
 }
