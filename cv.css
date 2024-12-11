@@ -3,6 +3,7 @@ body {
     background-color: #f0f0f0;
     user-select: none;
     line-height: 2;
+    font-size: 15px;
 }
 
 h2, h1, h3, h4 {
@@ -62,12 +63,6 @@ header img[alt=selfie] {
 .title {
     color: rgb(0, 132, 255);
     margin-bottom: 15px;
-}
-
-h2 + ul li {
-    color: #333;
-    margin-bottom: 8px;
-    line-height: 1.8;
 }
 
 .col-12.bg-primary.rounded-pill {
