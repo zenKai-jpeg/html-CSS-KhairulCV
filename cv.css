@@ -101,10 +101,6 @@ header img[alt=selfie] {
         box-shadow: none;
     }
 
-    .contact {
-        display: flexbox;
-    }
-
     .Qualifications {
         flex-direction: column;
     }
@@ -123,9 +119,9 @@ header img[alt=selfie] {
     }
 
     .contact {
-        flex-grow: 0;
         line-height: 1;
         padding: 50px;
+        display: flexbox;
     }
 
     body {
