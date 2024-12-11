@@ -77,10 +77,6 @@ header img[alt=selfie] {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
-    .table {
-        font-size: 14px;
-        display: block;
-    }
 
     .bold-span {
         font-weight: 500;
