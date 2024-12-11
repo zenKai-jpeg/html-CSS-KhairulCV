@@ -105,18 +105,12 @@ header img[alt=selfie] {
         display: flexbox;
     }
 
-    body {
-        zoom: 60%;
-        font-weight: 200;
-        background-color: rgb(15, 15, 15);
-    }
-
     .Qualifications {
         flex-direction: column;
     }
 
     .links {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     td, th {
@@ -132,5 +126,11 @@ header img[alt=selfie] {
         flex-grow: 0;
         line-height: 1;
         padding: 50px;
+    }
+
+    body {
+        zoom: 60%;
+        font-weight: 200;
+        background-color: rgb(15, 15, 15);
     }
 }
