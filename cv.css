@@ -80,7 +80,6 @@ header img[alt=selfie] {
     .table {
         font-size: 14px;
         display: block;
-        overflow-x: auto;
     }
 
     .bold-span {
