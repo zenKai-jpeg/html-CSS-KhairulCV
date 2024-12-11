@@ -90,23 +90,11 @@ h2 + ul li {
         flex-direction: column;
     }
 
-    .table {
-        font-size: 14px;
-        display: block;
-        overflow-x: auto;
-    }
-
-    header h1 {
-        font-size: 150%;
-    }
-
-    .Experience, .Wrapper, .Skills, .Objective {
-        max-width: 100%;
-        margin: 60px auto;
-        padding: 80px;
+    header {
+        font-size: 70%;
     }
     
     body {
-        zoom: 65%;
+        zoom: 60%;
     }
 }
