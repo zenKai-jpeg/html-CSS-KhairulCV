@@ -55,6 +55,9 @@ header img[alt=selfie] {
     line-height: 1.4;
 }
 
+.bold-span {
+    font-weight: 700;
+}
 .fw-bold.text-uppercase.text-primary {
     color: #333;
     line-height: 1.4;
@@ -91,7 +94,7 @@ h2 + ul li {
     }
 
     header {
-        font-size: 70%;
+        font-size: 65%;
     }
     
     body {
