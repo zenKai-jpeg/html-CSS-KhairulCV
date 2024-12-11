@@ -93,6 +93,12 @@ h2 + ul li {
         flex-direction: column;
     }
 
+    .table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+    }
+
     header {
         font-size: 65%;
     }
