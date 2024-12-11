@@ -31,7 +31,7 @@ h2 {
     font-style: normal;
 }
 
-.Experience, .Wrapper, .Skills {
+.Experience, .Wrapper, .Skills, .Objective {
     color: #333;
     margin: 60px auto;
     max-width: 900px;
@@ -45,7 +45,7 @@ h2 {
 .table {
     width: 100%;
     color: #333;
-    line-height: 2.2;
+    line-height: 3;
 }
 
 .Experience ul li {
