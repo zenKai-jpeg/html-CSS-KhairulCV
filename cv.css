@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: #f5f5f5;
-    padding: 20px;
+    padding: 30px;
     border-radius: 200px;
     max-width: 900px;
     margin: 10px auto;
@@ -36,11 +36,25 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 900px;
-    padding: 50px;
+    padding: 60px;
     background-color: #f5f5f5;
     border-radius: 70px;
     line-height: 1.6;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.content-container {
+    display: flex;
+    gap: 20px; /* Adds space between the divs */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pe-5 {
+    padding-right: 1.5rem;
 }
 
 .table {
@@ -87,4 +101,20 @@ h2 + ul li {
 
 .col-12.bg-primary.rounded-pill {
     font-family: 'Fredoka', sans-serif;
+}
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .table {
+        font-size: 14px;
+        display: block;
+        overflow-x: auto;
+    }
+
+    .pe-5 {
+        padding-right: 0;
+    }
 }
