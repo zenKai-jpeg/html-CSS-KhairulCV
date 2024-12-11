@@ -68,7 +68,7 @@ header img[alt=selfie] {
     color: rgb(0, 132, 255);
     margin-bottom: 20px;
     margin-top: 30px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .col-12.bg-primary.rounded-pill {
@@ -105,6 +105,6 @@ header img[alt=selfie] {
     }
 
     .links {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
