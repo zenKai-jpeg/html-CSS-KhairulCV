@@ -9,7 +9,9 @@ header {
     padding: 30px;
     border-radius: 200px;
     max-width: 900px;
-    margin: 10px auto;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,28 +40,20 @@ h2 {
     max-width: 900px;
     padding: 60px;
     background-color: #f5f5f5;
-    border-radius: 70px;
+    border-radius: 60px;
     line-height: 1.6;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .content-container {
     display: flex;
-    gap: 20px; /* Adds space between the divs */
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.pe-5 {
-    padding-right: 1.5rem;
+    gap: 20px;
 }
 
 .table {
     width: 100%;
     color: #333;
+    border-collapse: collapse;
     line-height: 3;
 }
 
@@ -114,7 +108,15 @@ h2 + ul li {
         overflow-x: auto;
     }
 
-    .pe-5 {
-        padding-right: 0;
+    header h1 {
+        font-size: 120%;
+        font-weight: 800;
+    }
+
+    body {
+        transform: scale(0.7);
+        background-color: #000000;
+        margin: 10px;
+        user-select: none;
     }
 }
