@@ -206,7 +206,6 @@ header img[alt=selfie] {
 .masonry-with-columns div:nth-child(7) { height: 450px; line-height: 478px; }
 .masonry-with-columns div:nth-child(8) { height: 775px; line-height: 224px; }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
     body {
         zoom: 65%;
@@ -215,21 +214,18 @@ header img[alt=selfie] {
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
-        font-size: 15px;
         border: 1px solid #ebebeb;
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.1);
-        transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
     }
 
     .Career:hover, .Experience:hover, .Qualifications:hover, 
     .Objective:hover, header:hover {
-        font-size: 15px;
         transform: translateY(-15px);
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.35);
     }
 
     .username {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .Qualifications {
@@ -238,40 +234,64 @@ header img[alt=selfie] {
 
     .links {
         font-size: 10px;
+        line-height: 1.5;
     }
 
     .title {
         font-size: 20px;
-        margin-bottom: -10x;
-    }
-
-    tr th, ul li {
-        font-size: 15px;
-        line-height: 1;
     }
 
     .contact {
+        line-height: 1;
         padding: 50px;
-        font-size: 15px;
+        margin-bottom: -5px;
     }
 
     header img[alt=selfie] {
         width: 150px;
-        margin-right: 20px;
+        margin: 0 20px 0 5px;
+        border-radius: 50%;
+        float: left;
     }
 
-    .masonry-with-columns video, 
+    .masonry-with-columns video {
+        height: 120%;
+        object-fit: cover;
+        display: block;
+    }
+
     .masonry-with-columns .project-item, 
-    .masonry-with-columns .overlay-text, 
     .masonry-with-columns .project-item::after {
         opacity: 1;
-        font-size: 15px;
-        display: flex; /* Enable flexbox */
-        align-items: center; /* Vertically center content */
+        transition: none;
+        background-color: rgba(0, 0, 0, 0.3); /* Ensure consistent overlay background */
     }
 
-    .masonry-with-columns .project-item {
-        transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+    .masonry-with-columns .project-item:hover {
+        box-shadow: none; /* Disable hover effects */
+        transform: none;
     }
 
+    th, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, 
+    ul li {
+        font-size: 13px;
+    }
+
+    ul li {
+        line-height: 1.2;
+    }
+
+    .overlay-text {
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        z-index: 1;
+        line-height: 1.5;
+        transition: none;
+    }
 }
