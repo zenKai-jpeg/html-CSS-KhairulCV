@@ -1,9 +1,13 @@
 body {
     margin: 40px;
-    background-color: #f0f0f0;
+    background: linear-gradient(to top left, #cae6ff, #f1f1f1);
     user-select: none;
     line-height: 2;
     font-size: 15px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 h2, h1, h3, h4 {
@@ -12,19 +16,19 @@ h2, h1, h3, h4 {
     font-style: normal;
 }
 
-.Career, .Experience, .Qualifications, .Skills, .Objective, header, .contact {
+header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
     color: #333;
-    margin: 40px auto;
+    margin: 60px auto;
     max-width: 1000px;
     padding: 50px;
-    background-color: #f5f5f5;
+    background: linear-gradient(to top left, #d9edff, #ffffff);
     border-radius: 60px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 10px 20px rgba(11, 27, 39, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.Career:hover, .Experience:hover, .Qualifications:hover, 
-.Skills:hover, .Objective:hover, header:hover, .contact:hover {
+header:hover, .Career:hover, .Experience:hover, .Qualifications:hover, 
+.Skills:hover, .Objective:hover, .Projects:hover, .contact:hover {
     transform: translateY(-15px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
 }
@@ -72,6 +76,7 @@ header img[alt=selfie] {
 
 .username {
     font-size: 40px;
+    color: #161616;
 }
 
 .contact {
@@ -79,26 +84,161 @@ header img[alt=selfie] {
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
-.col-12.bg-primary.rounded-pill {
+.col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
+    background: linear-gradient(to right, rgba(0, 132, 255, 1), rgb(180, 219, 255));
+    background-size: cover;
+    background-position: center center;
     font-family: 'Fredoka', sans-serif;
 }
 
-/* Responsive design */
-@media screen and (max-width: 768px) {
+.masonry-with-columns {
+    columns: 3 200px;
+    column-gap: 25px;
+    margin-bottom: -25px;
+}
+
+.masonry-with-columns .project-item {
+    position: relative;
+    border: 1px solid #d8d8d8;
+    color: white;
+    margin: 0 1rem 1rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 900;
+    font-size: 2rem;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #1d1d1d;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.masonry-with-columns img {
+    object-fit: fill;
+    transition: transform 1s ease; /* Smooth transition for zoom */
+}
+
+/* Image hover effect */
+.masonry-with-columns .project-item:hover img {
+    transform: scale(1.1) translate(-10%, -10%); /* Zoom in and move slightly */
+}
+
+/* Video styles */
+.masonry-with-columns video {
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text overlay */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease;
+    line-height: 1.3;
+}
+
+/* Hover effect to show text overlay */
+.masonry-with-columns .project-item:hover .overlay-text {
+    opacity: 1; /* Make the overlay visible on hover */
+}
+
+/* Darken effect only for video */
+.masonry-with-columns .project-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+/* Hover effect for card itself */
+.masonry-with-columns .project-item:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.75);
+    transform: translateY(-15px);
+}
+
+.masonry-with-columns .project-item:hover::after {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6); /* Darken effect on hover */
+}
+
+/* Prevent darkening for images */
+.masonry-with-columns .gradient::after {
+    background-color: transparent !important; /* Ensure no dark overlay for images */
+}
+
+  .masonry-with-columns div:nth-child(1) {
+    height: 440px;
+    line-height: 127px;
+  }
+  .masonry-with-columns div:nth-child(2) {
+    height: 430px;
+    line-height: 422px;
+  }
+  .masonry-with-columns div:nth-child(3) {
+    height: 330px;
+    line-height: 344px;
+  }
+  .masonry-with-columns div:nth-child(4) {
+    height: 200px;
+    line-height: 193px;
+  }
+  .masonry-with-columns div:nth-child(5) {
+    height: 800px;
+    line-height: 470px;
+  }
+  .masonry-with-columns div:nth-child(6) {
+    height: 200px;
+    line-height: 458px;
+  }
+  .masonry-with-columns div:nth-child(7) {
+    height: 450px;
+    line-height: 478px;
+  }
+  .masonry-with-columns div:nth-child(8) {
+    height: 775px;
+    line-height: 224px;
+  }
+
+  @media screen and (max-width: 768px) {
+    header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
+        background: linear-gradient(to top left, #161616, #2b2b2b);
+        color: #c2c2c2;
+        border: 1px solid #2b2b2b;
+    }
+
+    .Career:hover, .Experience:hover, .Qualifications:hover, 
+    .Objective:hover, header:hover {
+        transform: translateY(0px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
 
     .username {
         font-size: 15px;
-    }
-
-    .Career, .Experience, .Qualifications, .Skills, .Objective, header, .contact {
-        background-color:#141414 ;
-        color: #f0f0f0;
-        box-shadow: none;
+        color: white; /* Set text color to white */
     }
 
     .Qualifications {
@@ -107,14 +247,15 @@ header img[alt=selfie] {
 
     .links {
         font-size: 12px;
+        color: white; /* Set text color to white */
     }
 
     td, th {
-        color: white;
+        color: white; /* Set text color to white */
     }
 
     .title {
-        color: rgb(89, 126, 156);
+        color: rgb(89, 126, 156); /* This can remain as is or change to white */
         font-size: 30px;
     }
 
@@ -122,11 +263,13 @@ header img[alt=selfie] {
         line-height: 1;
         padding: 50px;
         display: flexbox;
+        color: white; /* Set text color to white */
     }
 
     body {
-        zoom: 60%;
+        zoom: 65%;
         font-weight: 200;
-        background-color: rgb(15, 15, 15);
+        background-color: rgb(15, 15, 15); /* Dark background */
     }
+
 }
