@@ -269,6 +269,7 @@ header img[alt=selfie] {
     body {
         zoom: 65%;
         line-height: 1.5;
+        font-size: 15px;
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
@@ -332,26 +333,23 @@ header img[alt=selfie] {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 18px;
+        font-size: 13px;
         font-weight: bold;
         z-index: 1;
         line-height: 1.5;
     }
 
     th {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
-        font-size: 15px;
+        font-size: 10px;
     }
     
-    li {
-        line-height: 1.5;
-    }
-    .masonry-with-columns .project-item::after {
-        background-color: rgba(0, 0, 0, 0.3);
-        opacity: 1;
+    ul li {
+        line-height: 1.2;
+        font-size: 13px;
     }
 
 }
