@@ -18,7 +18,7 @@ h2, h1, h3, h4 {
 
 header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
     color: #363636;
-    margin: 60px auto;
+    margin: 50px auto;
     max-width: 1000px;
     padding: 60px;
     background: linear-gradient(to top left, #d9edff, #ffffff);
@@ -65,27 +65,38 @@ header img[alt=selfie] {
 
 .company {
     font-size: 28px;
-    font-weight: 600;
     margin-top: 10px;
+    background: linear-gradient(to bottom, rgb(63, 178, 255), rgb(0, 110, 212));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .title {
     font-size: 30px;
-    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255)); /* Gradient for text */
-    background-clip: text; /* Standard property for future compatibility */
-    -webkit-background-clip: text; /* Vendor prefix for WebKit-based browsers (Chrome, Safari, etc.) */
-    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
-    color: transparent; /* Ensure text color is transparent */
+    margin-top: -5px;
+    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 .username {
     font-size: 40px;
-    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255)); /* Gradient for text */
-    background-clip: text; /* Standard property for future compatibility */
-    -webkit-background-clip: text; /* Vendor prefix for WebKit-based browsers (Chrome, Safari, etc.) */
-    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
-    color: transparent; /* Ensure text color is transparent */
+    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
+
+.links {
+    font-size: 18x;
+    line-height: 1.7;
+}
+
 
 .contact {
     display: flex;
@@ -102,11 +113,11 @@ header img[alt=selfie] {
     background-size: cover;
     background-position: center center;
     font-family: 'Fredoka', sans-serif;
-    transition: background 0.5s ease-in-out; /* Smooth transition for background change */
+    transition: background 0.5s ease-in-out;
 }
 
 .col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:hover, .col-6:hover, .col-5:hover {
-    background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255)); /* New gradient on hover */
+    background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255));
 }
 
 .masonry-with-columns {
@@ -135,22 +146,19 @@ header img[alt=selfie] {
 
 .masonry-with-columns img {
     object-fit: fill;
-    transition: transform 1s ease; /* Smooth transition for zoom */
+    transition: transform 1s ease;
 }
 
-/* Image hover effect */
 .masonry-with-columns .project-item:hover img {
-    transform: scale(1.1) translate(-10%, -10%); /* Zoom in and move slightly */
+    transform: scale(1.1) translate(-10%, -10%);
 }
 
-/* Video styles */
 .masonry-with-columns video {
     height: 100%;
     object-fit: cover;
     display: block;
 }
 
-/* Text overlay */
 .overlay-text {
     position: absolute;
     top: 50%;
@@ -160,17 +168,15 @@ header img[alt=selfie] {
     font-size: 18px;
     font-weight: bold;
     z-index: 1;
-    opacity: 0; /* Initially invisible */
+    opacity: 0;
     transition: opacity 0.3s ease;
     line-height: 1.3;
 }
 
-/* Hover effect to show text overlay */
 .masonry-with-columns .project-item:hover .overlay-text {
-    opacity: 1; /* Make the overlay visible on hover */
+    opacity: 1;
 }
 
-/* Darken effect only for video */
 .masonry-with-columns .project-item::after {
     content: "";
     position: absolute;
@@ -187,7 +193,6 @@ header img[alt=selfie] {
     opacity: 0;
 }
 
-/* Hover effect for card itself */
 .masonry-with-columns .project-item:hover {
     box-shadow: 0 15px 20px rgba(0, 91, 177, 0.699);
     transform: translateY(-15px);
@@ -274,7 +279,6 @@ header img[alt=selfie] {
 
     .username {
         font-size: 15px;
-        color: white; /* Set text color to white */
     }
 
     .Qualifications {
@@ -287,7 +291,7 @@ header img[alt=selfie] {
     }
 
     .title {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .contact {
