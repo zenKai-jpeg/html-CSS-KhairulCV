@@ -206,7 +206,7 @@ header img[alt=selfie] {
 .masonry-with-columns div:nth-child(7) { height: 450px; line-height: 478px; }
 .masonry-with-columns div:nth-child(8) { height: 775px; line-height: 224px; }
 
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     body {
         zoom: 65%;
         line-height: 1.5;
@@ -244,12 +244,14 @@ header img[alt=selfie] {
     .contact {
         line-height: 1;
         padding: 50px;
+        display: flexbox;
         margin-bottom: -5px;
     }
 
     header img[alt=selfie] {
         width: 150px;
-        margin: 0 20px 0 5px;
+        margin-right: 20px;
+        margin-left: 5px;
         border-radius: 50%;
         float: left;
     }
@@ -260,25 +262,9 @@ header img[alt=selfie] {
         display: block;
     }
 
-    .masonry-with-columns .project-item, 
-    .masonry-with-columns .project-item::after {
+    .masonry-with-columns .project-item {
         opacity: 1;
-        transition: none;
-        background-color: rgba(0, 0, 0, 0.3); /* Ensure consistent overlay background */
-    }
-
-    .masonry-with-columns .project-item:hover {
-        box-shadow: none; /* Disable hover effects */
-        transform: none;
-    }
-
-    th, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, 
-    ul li {
-        font-size: 13px;
-    }
-
-    ul li {
-        line-height: 1.2;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     .overlay-text {
@@ -292,6 +278,45 @@ header img[alt=selfie] {
         font-weight: bold;
         z-index: 1;
         line-height: 1.5;
-        transition: none;
     }
+
+    th {
+        font-size: 13px;
+    }
+
+    .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
+        font-size: 10px;
+    }
+    
+    ul li {
+        line-height: 1.2;
+        font-size: 13px;
+    }
+
+    .overlay-text {
+        top: 50%;
+        left: 50%;
+        font-size: 13px;
+        transition: none;
+        opacity: 1; /* Makes overlay text always visible on mobile */
+    }
+
+    .masonry-with-columns .project-item::after {
+        transition: none;
+        opacity: 1; /* Makes the overlay always visible on mobile */
+        background-color: rgba(0, 0, 0, 0.3); /* Maintain the default overlay color */
+    }
+
+    .masonry-with-columns .project-item:hover {
+        transition: none;
+        box-shadow: none; /* Disables shadow on hover */
+        transform: none; /* Disables hover translation */
+    }
+
+    .masonry-with-columns .project-item:hover::after {
+        transition: none;
+        opacity: 1; /* No hover effect needed */
+        background-color: rgba(0, 0, 0, 0.3); /* Maintain the default overlay color */
+    }
+
 }
