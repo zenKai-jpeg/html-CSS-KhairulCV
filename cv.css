@@ -242,10 +242,12 @@ header img[alt=selfie] {
 
     .title {
         font-size: 20px;
+        margin-bottom: -10x;
     }
 
     tr th, ul li {
         font-size: 15px;
+        line-height: 1;
     }
 
     .contact {
