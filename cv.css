@@ -242,6 +242,11 @@ header img[alt=selfie] {
         font-size: 20px;
     }
 
+    th, ul li {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
     .contact {
         padding: 50px;
     }
