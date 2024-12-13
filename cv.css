@@ -266,6 +266,11 @@ header img[alt=selfie] {
   }
 
   @media screen and (max-width: 768px) {
+    body {
+        zoom: 65%;
+        line-height: 1.5;
+    }
+
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
         border: 1px solid #ebebeb;
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.1);
@@ -301,10 +306,6 @@ header img[alt=selfie] {
         margin-bottom: -5px;
     }
 
-    body {
-        zoom: 65%;
-    }
-
     header img[alt=selfie] {
         width: 150px;
         margin-right: 20px;
@@ -334,7 +335,7 @@ header img[alt=selfie] {
         font-size: 18px;
         font-weight: bold;
         z-index: 1;
-        line-height: 1.3;
+        line-height: 1.5;
     }
 
     th {
@@ -345,6 +346,9 @@ header img[alt=selfie] {
         font-size: 15px;
     }
     
+    li {
+        line-height: 1.5;
+    }
     .masonry-with-columns .project-item::after {
         background-color: rgba(0, 0, 0, 0.3);
         opacity: 1;
