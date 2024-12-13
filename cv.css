@@ -17,20 +17,20 @@ h2, h1, h3, h4 {
 }
 
 header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
-    color: #333;
+    color: #363636;
     margin: 60px auto;
     max-width: 1000px;
-    padding: 50px;
+    padding: 60px;
     background: linear-gradient(to top left, #d9edff, #ffffff);
     border-radius: 60px;
-    box-shadow: 0 10px 20px rgba(11, 27, 39, 0.15);
+    box-shadow: 0 10px 20px rgba(21, 91, 148, 0.15);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 header:hover, .Career:hover, .Experience:hover, .Qualifications:hover, 
 .Skills:hover, .Objective:hover, .Projects:hover, .contact:hover {
     transform: translateY(-15px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 30px rgba(2, 105, 201, 0.39);
 }
 
 header {
@@ -70,13 +70,21 @@ header img[alt=selfie] {
 }
 
 .title {
-    color: rgb(0, 132, 255);
     font-size: 30px;
+    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255)); /* Gradient for text */
+    background-clip: text; /* Standard property for future compatibility */
+    -webkit-background-clip: text; /* Vendor prefix for WebKit-based browsers (Chrome, Safari, etc.) */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    color: transparent; /* Ensure text color is transparent */
 }
 
 .username {
     font-size: 40px;
-    color: #161616;
+    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255)); /* Gradient for text */
+    background-clip: text; /* Standard property for future compatibility */
+    -webkit-background-clip: text; /* Vendor prefix for WebKit-based browsers (Chrome, Safari, etc.) */
+    -webkit-text-fill-color: transparent; /* Make the text fill transparent to show the gradient */
+    color: transparent; /* Ensure text color is transparent */
 }
 
 .contact {
@@ -90,16 +98,22 @@ header img[alt=selfie] {
 }
 
 .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
-    background: linear-gradient(to right, rgba(0, 132, 255, 1), rgb(180, 219, 255));
+    background: linear-gradient(to right, rgba(0, 132, 255, 1), rgb(148, 198, 255), rgb(148, 198, 255), rgb(156, 202, 255), rgb(230, 245, 253)); /* Added a third color */
     background-size: cover;
     background-position: center center;
     font-family: 'Fredoka', sans-serif;
+    transition: background 0.5s ease-in-out; /* Smooth transition for background change */
+}
+
+.col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:hover, .col-6:hover, .col-5:hover {
+    background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255)); /* New gradient on hover */
 }
 
 .masonry-with-columns {
     columns: 3 200px;
     column-gap: 25px;
-    margin-bottom: -25px;
+    margin-bottom: -30px;
+    margin-top: -10px;
 }
 
 .masonry-with-columns .project-item {
@@ -175,8 +189,7 @@ header img[alt=selfie] {
 
 /* Hover effect for card itself */
 .masonry-with-columns .project-item:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
-    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 15px 20px rgba(0, 91, 177, 0.699);
     transform: translateY(-15px);
 }
 
@@ -186,8 +199,32 @@ header img[alt=selfie] {
 }
 
 /* Prevent darkening for images */
-.masonry-with-columns .gradient::after {
-    background-color: transparent !important; /* Ensure no dark overlay for images */
+.masonry-with-columns .gradient-red {
+    background: linear-gradient(to top left, #ffbb00, #ff0000);
+    transition: all 0.3s ease;
+}
+
+.masonry-with-columns .gradient-red:hover::after {
+    background: linear-gradient(to bottom, #ff3c00, #fffb00);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.masonry-with-columns .gradient-blue {
+    background: linear-gradient(to top left, #002fff, #bae3ff);
+}
+
+.masonry-with-columns .gradient-blue:hover::after {
+    background: linear-gradient(to top, #002ae4, #91d3ff);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.masonry-with-columns .gradient-green {
+    background: linear-gradient(to bottom right, #008622, #b9ff90);
+}
+
+.masonry-with-columns .gradient-green:hover::after {
+    background: linear-gradient(to bottom, #00a72a, #87ff41);
+    background-color: rgba(0, 0, 0, 0);
 }
 
   .masonry-with-columns div:nth-child(1) {
@@ -225,15 +262,14 @@ header img[alt=selfie] {
 
   @media screen and (max-width: 768px) {
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
-        background: linear-gradient(to top left, #161616, #2b2b2b);
-        color: #c2c2c2;
-        border: 1px solid #2b2b2b;
+        border: 1px solid #ebebeb;
+        box-shadow: 0 10px 20px rgba(4, 94, 155, 0.1);
     }
 
     .Career:hover, .Experience:hover, .Qualifications:hover, 
     .Objective:hover, header:hover {
-        transform: translateY(0px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transform: translateY(-15px);
+        box-shadow: 0 10px 20px rgba(4, 94, 155, 0.35);
     }
 
     .username {
@@ -247,15 +283,9 @@ header img[alt=selfie] {
 
     .links {
         font-size: 12px;
-        color: white; /* Set text color to white */
-    }
-
-    td, th {
-        color: white; /* Set text color to white */
     }
 
     .title {
-        color: rgb(89, 126, 156); /* This can remain as is or change to white */
         font-size: 30px;
     }
 
@@ -263,7 +293,6 @@ header img[alt=selfie] {
         line-height: 1;
         padding: 50px;
         display: flexbox;
-        color: white; /* Set text color to white */
     }
 
     body {
@@ -272,4 +301,11 @@ header img[alt=selfie] {
         background-color: rgb(15, 15, 15); /* Dark background */
     }
 
+    header img[alt=selfie] {
+        width: 130px;
+        margin-right: 20px;
+        margin-left: 5px;
+        border-radius: 50%;
+        float: left;
+    }
 }
