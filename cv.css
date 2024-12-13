@@ -282,7 +282,8 @@ header img[alt=selfie] {
     }
 
     .links {
-        font-size: 12px;
+        font-size: 10px;
+        line-height: 1.2;
     }
 
     .title {
@@ -302,10 +303,24 @@ header img[alt=selfie] {
     }
 
     header img[alt=selfie] {
-        width: 130px;
+        width: 150px;
         margin-right: 20px;
         margin-left: 5px;
         border-radius: 50%;
         float: left;
     }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        z-index: 1;
+        opacity: 1;
+        line-height: 1.2;
+    }
+
 }
