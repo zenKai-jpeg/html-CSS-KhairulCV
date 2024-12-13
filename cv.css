@@ -215,6 +215,7 @@ header img[alt=selfie] {
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
+        font-size: 15px;
         border: 1px solid #ebebeb;
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.1);
         transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
@@ -222,12 +223,13 @@ header img[alt=selfie] {
 
     .Career:hover, .Experience:hover, .Qualifications:hover, 
     .Objective:hover, header:hover {
+        font-size: 15px;
         transform: translateY(-15px);
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.35);
     }
 
     .username {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .Qualifications {
@@ -242,13 +244,13 @@ header img[alt=selfie] {
         font-size: 20px;
     }
 
-    th, ul li {
+    tr th, ul li {
         font-size: 15px;
-        line-height: 1.2;
     }
 
     .contact {
         padding: 50px;
+        font-size: 15px;
     }
 
     header img[alt=selfie] {
@@ -261,6 +263,7 @@ header img[alt=selfie] {
     .masonry-with-columns .overlay-text, 
     .masonry-with-columns .project-item::after {
         opacity: 1;
+        font-size: 15px;
         display: flex; /* Enable flexbox */
         align-items: center; /* Vertically center content */
     }
