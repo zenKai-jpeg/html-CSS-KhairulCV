@@ -14,6 +14,7 @@ h1, h2, h3, h4 {
 
 header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
     color: #363636;
+    border: 1px solid #9bd2ff;
     margin: 50px auto;
     max-width: 1000px;
     padding: 60px;
