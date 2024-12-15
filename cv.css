@@ -197,8 +197,6 @@ header img[alt=selfie] {
     .masonry-with-columns .project-item {
         position: relative;
         overflow: hidden;
-        user-select: none; /* Disable text selection */
-        transition: transform 0.3s ease; /* Smooth transition for any transforms */
     }
 
     .masonry-with-columns .project-item::after {
@@ -214,11 +212,14 @@ header img[alt=selfie] {
         align-items: center;
         transition: none; /* Disable transition */
         opacity: 1; /* Ensure overlay is always visible */
-        pointer-events: none; /* Allow clicks to pass through the overlay */
     }
 
-    .masonry-with-columns .project-item:active {
-        transform: none; /* Prevent any transform on active state */
+    .masonry-with-columns .project-item:hover::after {
+        background-color: rgba(0, 0, 0, 0.6); /* Ensure the dark overlay stays the same on hover */
+    }
+
+    .masonry-with-columns .project-item img {
+        transition: none; /* Disable image scaling transition */
     }
 
     .overlay-text {
@@ -232,7 +233,6 @@ header img[alt=selfie] {
         font-weight: bold;
         z-index: 2; /* Ensure text is above the dark overlay */
         line-height: 1.5;
-        pointer-events: none; /* Allow clicks to pass through the text */
     }
 
     /* Other mobile-specific styles */
