@@ -195,7 +195,6 @@ header img[alt=selfie] {
     body {
         font-size: 12px;
         zoom: 65%;
-        line-height: 1.5;
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
@@ -238,7 +237,6 @@ header img[alt=selfie] {
     th, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5,
     ul li, .links, .overlay-text {
         font-size: 12px;
-        line-height: 1.5;
     }
 
     .overlay-text {
@@ -255,9 +253,5 @@ header img[alt=selfie] {
 
     .contact {
         padding: 50px;
-    }
-
-    .links {
-        line-height: 1.5;
     }
 }
