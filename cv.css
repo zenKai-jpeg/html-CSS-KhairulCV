@@ -88,7 +88,7 @@ header img[alt=selfie] {
 }
 
 .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
-    background: linear-gradient(to right, rgba(0, 132, 255, 1), rgb(148, 198, 255), rgb(148, 198, 255), rgb(156, 202, 255), rgb(230, 245, 253)); /* Added a third color */
+    background: linear-gradient(to right, rgba(0, 132, 255, 1), rgb(148, 198, 255), rgb(148, 198, 255), rgb(156, 202, 255), rgb(230, 245, 253));
     background-size: cover;
     background-position: center center;
     font-family: 'Fredoka', sans-serif;
