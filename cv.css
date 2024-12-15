@@ -60,7 +60,7 @@ header img[alt=selfie] {
     margin-bottom: 10px;
 }
 
-.username, .title, .company {
+.company, .username, .title {
     font-size: 40px;
     background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255));
     background-clip: text;
@@ -68,7 +68,6 @@ header img[alt=selfie] {
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
-
 
 .company {
     font-size: 28px;
@@ -79,7 +78,6 @@ header img[alt=selfie] {
     font-size: 18x;
     line-height: 1.7;
 }
-
 
 .contact {
     display: flex;
@@ -99,23 +97,18 @@ header img[alt=selfie] {
     transition: background 0.5s ease-in-out;
 }
 
-.col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:hover, .col-6:hover, .col-5:hover {
-    background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255));
-}
+.col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:hover, .col-6:hover, .col-5:hover {background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255));}
 
 .masonry-with-columns {
     columns: 3 200px;
-    column-gap: 25px;
-    margin-bottom: -30px;
-    margin-top: -10px;
 }
 
 .masonry-with-columns .project-item {
+    columns: 3 200px;
     position: relative;
     border: 1px solid #d8d8d8;
     color: white;
     margin: 0 1rem 1rem 0;
-    display: inline-block;
     width: 100%;
     text-align: center;
     font-family: system-ui;
@@ -145,11 +138,9 @@ header img[alt=selfie] {
 .overlay-text {
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 18px;
-    font-weight: bold;
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -201,7 +192,7 @@ header img[alt=selfie] {
 .masonry-with-columns div:nth-child(5) { height: 800px}
 .masonry-with-columns div:nth-child(6) { height: 200px}
 .masonry-with-columns div:nth-child(7) { height: 450px}
-.masonry-with-columns div:nth-child(8) { height: 775px}
+.masonry-with-columns div:nth-child(8) { height: 765px}
 
   @media screen and (max-width: 768px) {
     body {
