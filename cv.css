@@ -203,69 +203,30 @@ header img[alt=selfie] {
     background-color: rgba(0, 0, 0, 0.6); /* Darken effect on hover */
 }
 
-/* Prevent darkening for images */
-.masonry-with-columns .gradient-red {
-    background: linear-gradient(to top left, #ffbb00, #ff0000);
-    transition: all 0.3s ease;
-}
+.masonry-with-columns .gradient-red {background: linear-gradient(to top left, #ffbb00, #ff0000);}
+.masonry-with-columns .gradient-blue {background: linear-gradient(to top left, #002fff, #bae3ff);}
+.masonry-with-columns .gradient-green {background: linear-gradient(to bottom right, #008622, #b9ff90);}
 
-.masonry-with-columns .gradient-red:hover::after {
-    background: linear-gradient(to bottom, #ff3c00, #fffb00);
-    background-color: rgba(0, 0, 0, 0);
-}
+.masonry-with-columns .gradient-red:hover::after {background: linear-gradient(to top, #ffee00, #ff8800);}
+.masonry-with-columns .gradient-blue:hover::after {background: linear-gradient(to top, #0077ff, #baffff);}
+.masonry-with-columns .gradient-green:hover::after {background: linear-gradient(to bottom, #008612, #e3ff97);}
 
-.masonry-with-columns .gradient-blue {
-    background: linear-gradient(to top left, #002fff, #bae3ff);
-}
-
-.masonry-with-columns .gradient-blue:hover::after {
-    background: linear-gradient(to top, #002ae4, #91d3ff);
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.masonry-with-columns .gradient-green {
-    background: linear-gradient(to bottom right, #008622, #b9ff90);
-}
-
-.masonry-with-columns .gradient-green:hover::after {
-    background: linear-gradient(to bottom, #00a72a, #87ff41);
-    background-color: rgba(0, 0, 0, 0);
-}
-
-  .masonry-with-columns div:nth-child(1) {
-    height: 440px;
-    line-height: 127px;
-  }
-  .masonry-with-columns div:nth-child(2) {
-    height: 430px;
-    line-height: 422px;
-  }
-  .masonry-with-columns div:nth-child(3) {
-    height: 330px;
-    line-height: 344px;
-  }
-  .masonry-with-columns div:nth-child(4) {
-    height: 200px;
-    line-height: 193px;
-  }
-  .masonry-with-columns div:nth-child(5) {
-    height: 800px;
-    line-height: 470px;
-  }
-  .masonry-with-columns div:nth-child(6) {
-    height: 200px;
-    line-height: 458px;
-  }
-  .masonry-with-columns div:nth-child(7) {
-    height: 450px;
-    line-height: 478px;
-  }
-  .masonry-with-columns div:nth-child(8) {
-    height: 775px;
-    line-height: 224px;
-  }
+.masonry-with-columns div:nth-child(1) { height: 440px; line-height: 127px; }
+.masonry-with-columns div:nth-child(2) { height: 430px; line-height: 422px; }
+.masonry-with-columns div:nth-child(3) { height: 330px; line-height: 344px; }
+.masonry-with-columns div:nth-child(4) { height: 200px; line-height: 193px; }
+.masonry-with-columns div:nth-child(5) { height: 800px; line-height: 470px; }
+.masonry-with-columns div:nth-child(6) { height: 200px; line-height: 458px; }
+.masonry-with-columns div:nth-child(7) { height: 450px; line-height: 478px; }
+.masonry-with-columns div:nth-child(8) { height: 775px; line-height: 224px; }
 
   @media screen and (max-width: 768px) {
+    body {
+        zoom: 65%;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
         border: 1px solid #ebebeb;
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.1);
@@ -278,7 +239,7 @@ header img[alt=selfie] {
     }
 
     .username {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .Qualifications {
@@ -287,7 +248,7 @@ header img[alt=selfie] {
 
     .links {
         font-size: 10px;
-        line-height: 1.2;
+        line-height: 1.5;
     }
 
     .title {
@@ -298,12 +259,7 @@ header img[alt=selfie] {
         line-height: 1;
         padding: 50px;
         display: flexbox;
-    }
-
-    body {
-        zoom: 65%;
-        font-weight: 200;
-        background-color: rgb(15, 15, 15); /* Dark background */
+        margin-bottom: -5px;
     }
 
     header img[alt=selfie] {
@@ -314,7 +270,19 @@ header img[alt=selfie] {
         float: left;
     }
 
+    .masonry-with-columns video {
+        height: 120%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .masonry-with-columns .project-item {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
     .overlay-text {
+        opacity: 1;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -323,8 +291,46 @@ header img[alt=selfie] {
         font-size: 13px;
         font-weight: bold;
         z-index: 1;
-        opacity: 1;
+        line-height: 1.5;
+    }
+
+    th {
+        font-size: 13px;
+    }
+
+    .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
+        font-size: 10px;
+    }
+    
+    ul li {
         line-height: 1.2;
+        font-size: 13px;
+    }
+
+    .overlay-text {
+        top: 50%;
+        left: 50%;
+        font-size: 13px;
+        transition: none;
+        opacity: 1; /* Makes overlay text always visible on mobile */
+    }
+
+    .masonry-with-columns .project-item::after {
+        transition: none;
+        opacity: 1; /* Makes the overlay always visible on mobile */
+        background-color: rgba(0, 0, 0, 0.3); /* Maintain the default overlay color */
+    }
+
+    .masonry-with-columns .project-item:hover {
+        transition: none;
+        box-shadow: none; /* Disables shadow on hover */
+        transform: none; /* Disables hover translation */
+    }
+
+    .masonry-with-columns .project-item:hover::after {
+        transition: none;
+        opacity: 1; /* No hover effect needed */
+        background-color: rgba(0, 0, 0, 0.3); /* Maintain the default overlay color */
     }
 
 }
