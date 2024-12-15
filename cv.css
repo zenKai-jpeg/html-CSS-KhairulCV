@@ -16,11 +16,6 @@ h1, h2, h3, h4 {
     font-style: normal;
 }
 
-ul li {
-font-size: 13px;
-line-height: 1;
-}
-
 header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
     color: #363636;
     margin: 50px auto;
@@ -68,33 +63,19 @@ header img[alt=selfie] {
     margin-bottom: 10px;
 }
 
-.company {
-    font-size: 28px;
-    margin-top: 10px;
-    background: linear-gradient(to bottom, rgb(63, 178, 255), rgb(0, 110, 212));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
-.title {
-    font-size: 30px;
-    margin-top: -5px;
-    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-
-.username {
+.username, .title, .company {
     font-size: 40px;
     background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+}
+
+
+.company {
+    font-size: 28px;
+    margin-top: 10px;
 }
 
 .links {
@@ -228,7 +209,8 @@ header img[alt=selfie] {
   @media screen and (max-width: 768px) {
     body {
         zoom: 65%;
-        font-size: 13px;
+        line-height: 1.5;
+        font-size: 15px;
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
@@ -304,9 +286,5 @@ header img[alt=selfie] {
 
     .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
         font-size: 10px;
-    }
-
-    ul li {
-        font-size: 13px;
     }
 }
