@@ -112,7 +112,7 @@ col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:h
     margin: 0 1rem 1rem 0;
     width: 100%;
     font-family: system-ui;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2rem;
     border-radius: 30px;
     overflow: hidden;
@@ -138,6 +138,7 @@ col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:h
 .overlay-text {
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 1rem;
