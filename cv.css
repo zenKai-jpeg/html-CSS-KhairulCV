@@ -211,7 +211,6 @@ header img[alt=selfie] {
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
-        border: 1px solid #ebebeb;
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.1);
     }
 
