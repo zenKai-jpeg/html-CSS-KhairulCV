@@ -198,7 +198,6 @@ header img[alt=selfie] {
         position: relative;
         overflow: hidden;
         user-select: none; /* Disable text selection */
-        transition: transform 0.3s ease; /* Smooth transition for any transforms */
     }
 
     .masonry-with-columns .project-item::after {
@@ -212,7 +211,6 @@ header img[alt=selfie] {
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: none; /* Disable transition */
         opacity: 1; /* Ensure overlay is always visible */
         pointer-events: none; /* Allow clicks to pass through the overlay */
     }
