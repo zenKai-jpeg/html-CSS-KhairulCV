@@ -30,17 +30,17 @@ header:hover, .Career:hover, .Experience:hover, .Qualifications:hover,
 }
 
 header {
-    padding: 20px;
-    border-radius: 200px;
+    padding: 1rem;
+    border-radius: 7.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 header img[alt=selfie] {
-    width: 200px;
-    margin-right: 30px;
-    margin-left: 5px;
+    width: 10rem;
+    margin-right: 1rem;
+    margin-left: 0.25rem;
     border-radius: 50%;
 }
 
@@ -93,9 +93,12 @@ header img[alt=selfie] {
     background-position: center center;
     font-family: 'Fredoka', sans-serif;
     transition: background 0.5s ease-in-out;
+    color: #fafafa
 }
 
-.col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:hover, .col-6:hover, .col-5:hover {background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255));}
+col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:hover, .col-6:hover, .col-5:hover {
+    background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255));
+}
 
 .masonry-with-columns {
     columns: 3 200px;
@@ -137,7 +140,7 @@ header img[alt=selfie] {
     top: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -232,7 +235,7 @@ header img[alt=selfie] {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 13px;
+        font-size: 1rem;
         font-weight: bold;
         z-index: 1;
         line-height: 1.5;
