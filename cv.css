@@ -183,19 +183,19 @@ header img[alt=selfie] {
 .masonry-with-columns .gradient-blue:hover::after {background: linear-gradient(to top, #0077ff, #baffff);}
 .masonry-with-columns .gradient-green:hover::after {background: linear-gradient(to bottom, #008612, #e3ff97);}
 
-.masonry-with-columns div:nth-child(1) { height: 440px}
-.masonry-with-columns div:nth-child(2) { height: 430px}
-.masonry-with-columns div:nth-child(3) { height: 330px}
-.masonry-with-columns div:nth-child(4) { height: 200px}
-.masonry-with-columns div:nth-child(5) { height: 800px}
-.masonry-with-columns div:nth-child(6) { height: 200px}
-.masonry-with-columns div:nth-child(7) { height: 450px}
-.masonry-with-columns div:nth-child(8) { height: 765px}
+.masonry-with-columns div:nth-child(1) {height: 440px}
+.masonry-with-columns div:nth-child(2) {height: 430px}
+.masonry-with-columns div:nth-child(3) {height: 330px}
+.masonry-with-columns div:nth-child(4) {height: 200px}
+.masonry-with-columns div:nth-child(5) {height: 800px}
+.masonry-with-columns div:nth-child(6) {height: 200px}
+.masonry-with-columns div:nth-child(7) {height: 450px}
+.masonry-with-columns div:nth-child(8) {height: 765px}
 
   @media screen and (max-width: 768px) {
     body {
         zoom: 65%;
-        line-height: 2;
+        line-height: 3;
     }
 
     .company, .title {
