@@ -228,8 +228,7 @@ header img[alt=selfie] {
   @media screen and (max-width: 768px) {
     body {
         zoom: 65%;
-        line-height: 1.5;
-        font-size: 15px;
+        font-size: 13px;
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
@@ -305,5 +304,9 @@ header img[alt=selfie] {
 
     .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
         font-size: 10px;
+    }
+
+    ul li {
+        font-size: 13px;
     }
 }
