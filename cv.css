@@ -193,7 +193,7 @@ header img[alt=selfie] {
 
   @media screen and (max-width: 768px) {
     body {
-        zoom: 70%;
+        zoom: 65%;
     }
 
     .company, .username, .title {
