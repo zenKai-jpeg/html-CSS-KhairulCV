@@ -268,8 +268,6 @@ header img[alt=selfie] {
   @media screen and (max-width: 768px) {
     body {
         zoom: 65%;
-        line-height: 1.5;
-        font-size: 15px;
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
@@ -333,49 +331,26 @@ header img[alt=selfie] {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 13px;
+        font-size: 18px;
         font-weight: bold;
         z-index: 1;
         line-height: 1.5;
     }
 
     th {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
-        font-size: 10px;
+        font-size: 15px;
     }
     
-    ul li {
-        line-height: 1.2;
-        font-size: 13px;
+    li {
+        line-height: 1.5;
     }
-
-    .overlay-text {
-        top: 50%;
-        left: 50%;
-        font-size: 13px;
-        transition: none;
-        opacity: 1; /* Makes overlay text always visible on mobile */
-    }
-
     .masonry-with-columns .project-item::after {
-        transition: none;
-        opacity: 1; /* Makes the overlay always visible on mobile */
-        background-color: rgba(0, 0, 0, 0.3); /* Maintain the default overlay color */
-    }
-
-    .masonry-with-columns .project-item:hover {
-        transition: none;
-        box-shadow: none; /* Disables shadow on hover */
-        transform: none; /* Disables hover translation */
-    }
-
-    .masonry-with-columns .project-item:hover::after {
-        transition: none;
-        opacity: 1; /* No hover effect needed */
-        background-color: rgba(0, 0, 0, 0.3); /* Maintain the default overlay color */
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 1;
     }
 
 }
