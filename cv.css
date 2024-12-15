@@ -216,14 +216,14 @@ header img[alt=selfie] {
 .masonry-with-columns .gradient-blue:hover::after {background: linear-gradient(to top, #0077ff, #baffff);}
 .masonry-with-columns .gradient-green:hover::after {background: linear-gradient(to bottom, #008612, #e3ff97);}
 
-.masonry-with-columns div:nth-child(1) { height: 440px; line-height: 127px; }
-.masonry-with-columns div:nth-child(2) { height: 430px; line-height: 422px; }
-.masonry-with-columns div:nth-child(3) { height: 330px; line-height: 344px; }
-.masonry-with-columns div:nth-child(4) { height: 200px; line-height: 193px; }
-.masonry-with-columns div:nth-child(5) { height: 800px; line-height: 470px; }
-.masonry-with-columns div:nth-child(6) { height: 200px; line-height: 458px; }
-.masonry-with-columns div:nth-child(7) { height: 450px; line-height: 478px; }
-.masonry-with-columns div:nth-child(8) { height: 775px; line-height: 224px; }
+.masonry-with-columns div:nth-child(1) { height: 440px}
+.masonry-with-columns div:nth-child(2) { height: 430px}
+.masonry-with-columns div:nth-child(3) { height: 330px}
+.masonry-with-columns div:nth-child(4) { height: 200px}
+.masonry-with-columns div:nth-child(5) { height: 800px}
+.masonry-with-columns div:nth-child(6) { height: 200px}
+.masonry-with-columns div:nth-child(7) { height: 450px}
+.masonry-with-columns div:nth-child(8) { height: 775px}
 
   @media screen and (max-width: 768px) {
     body {
