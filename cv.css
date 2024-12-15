@@ -93,10 +93,9 @@ header img[alt=selfie] {
     background-position: center center;
     font-family: 'Fredoka', sans-serif;
     transition: background 0.5s ease-in-out;
-    
+    font-size: 0.8rem;
     color: #ffffff
 }
-
 .masonry-with-columns {
     columns: 3 200px;
 }
