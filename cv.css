@@ -7,13 +7,11 @@ body {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-style: normal;
 }
 
 h1, h2, h3, h4 {
     font-family: 'Comfortaa', 'Fredoka', sans-serif;
     font-weight: 700;
-    font-style: normal;
 }
 
 header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
@@ -27,7 +25,7 @@ header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-header:hover, .Career:hover, .Experience:hover, .Qualifications:hover, 
+header:hover, .Career:hover, .Experience:hover, .Qualifications:hover,
 .Skills:hover, .Objective:hover, .Projects:hover, .contact:hover {
     transform: translateY(-15px);
     box-shadow: 0 20px 30px rgba(2, 105, 201, 0.39);
@@ -53,35 +51,32 @@ header img[alt=selfie] {
     flex-direction: row;
 }
 
-.role {
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.job {
-    margin: 20px 0 10px;
-}
-
-.company {
-    font-size: 28px;
+.company, .title, .username, .job, .links, .contact {
     margin-top: 10px;
+    font-size: 15px;
+}
+
+.title, .username {
+    font-size: 30px;
     background: linear-gradient(to bottom, rgb(63, 178, 255), rgb(0, 110, 212));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.title, .username {
-    font-size: 30px;
-    margin-top: -5px;
-    background: linear-gradient(to bottom, rgb(109, 196, 255), rgb(32, 147, 255));
+.company {
+    font-size: 28px;
+    background: linear-gradient(to bottom, rgb(63, 178, 255), rgb(0, 110, 212));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.role {
+    font-size: 15px;
+}
+
 .links {
-    font-size: 18px;
     line-height: 1.7;
 }
 
@@ -94,13 +89,11 @@ header img[alt=selfie] {
 
 .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5 {
     background: linear-gradient(to right, rgba(0, 132, 255, 1), rgb(148, 198, 255), rgb(230, 245, 253));
-    background-size: cover;
-    background-position: center center;
     font-family: 'Fredoka', sans-serif;
     transition: background 0.5s ease-in-out;
 }
 
-.col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, 
+.col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover,
 .col-7:hover, .col-6:hover, .col-5:hover {
     background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255));
 }
@@ -128,12 +121,12 @@ header img[alt=selfie] {
     transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-.masonry-with-columns img {
+.masonry-with-columns img, .masonry-with-columns video {
     object-fit: fill;
     transition: transform 1s ease;
 }
 
-.masonry-with-columns .project-item:hover img {
+.masonry-with-columns .project-item:hover img, .masonry-with-columns .project-item:hover video {
     transform: scale(1.1) translate(-10%, -10%);
 }
 
@@ -177,15 +170,8 @@ header img[alt=selfie] {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Gradients */
 .masonry-with-columns .gradient-red {
     background: linear-gradient(to top left, #ffbb00, #ff0000);
-}
-
-.masonry-with-columns .gradient-red:hover::after, 
-.masonry-with-columns .gradient-blue:hover::after, 
-.masonry-with-columns .gradient-green:hover::after {
-    background-color: transparent;
 }
 
 .masonry-with-columns .gradient-blue {
@@ -196,7 +182,6 @@ header img[alt=selfie] {
     background: linear-gradient(to bottom right, #008622, #b9ff90);
 }
 
-/* Specific Heights */
 .masonry-with-columns div:nth-child(1) { height: 440px; line-height: 127px; }
 .masonry-with-columns div:nth-child(2) { height: 430px; line-height: 422px; }
 .masonry-with-columns div:nth-child(3) { height: 330px; line-height: 344px; }
@@ -208,9 +193,9 @@ header img[alt=selfie] {
 
 @media screen and (max-width: 768px) {
     body {
+        font-size: 12px;
         zoom: 65%;
         line-height: 1.5;
-        font-size: 15px;
     }
 
     header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .contact {
@@ -218,40 +203,18 @@ header img[alt=selfie] {
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.1);
     }
 
-    .Career:hover, .Experience:hover, .Qualifications:hover, 
+    .Career:hover, .Experience:hover, .Qualifications:hover,
     .Objective:hover, header:hover {
-        transform: translateY(-15px);
         box-shadow: 0 10px 20px rgba(4, 94, 155, 0.35);
-    }
-
-    .username {
-        font-size: 18px;
-    }
-
-    .Qualifications {
-        flex-direction: column;
-    }
-
-    .links {
-        font-size: 10px;
-        line-height: 1.5;
-    }
-
-    .title {
-        font-size: 20px;
-    }
-
-    .contact {
-        line-height: 1;
-        padding: 50px;
-        margin-bottom: -5px;
     }
 
     header img[alt=selfie] {
         width: 150px;
         margin: 0 20px 0 5px;
-        border-radius: 50%;
-        float: left;
+    }
+
+    .Qualifications {
+        flex-direction: column;
     }
 
     .masonry-with-columns video {
@@ -259,38 +222,42 @@ header img[alt=selfie] {
         object-fit: cover;
         display: block;
     }
-    .masonry-with-columns .project-item, 
+
+    .masonry-with-columns .project-item,
     .masonry-with-columns .project-item::after {
         opacity: 1;
         transition: none;
-        background-color: rgba(0, 0, 0, 0.3); /* Ensure consistent overlay background */
+        background-color: rgba(0, 0, 0, 0.3);
     }
 
     .masonry-with-columns .project-item:hover {
-        box-shadow: none; /* Disable hover effects */
+        box-shadow: none;
         transform: none;
     }
 
-    th, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, 
-    ul li {
-        font-size: 13px;
-    }
-
-    ul li {
-        line-height: 1.2;
+    th, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5,
+    ul li, .links, .overlay-text {
+        font-size: 12px;
+        line-height: 1.5;
     }
 
     .overlay-text {
         opacity: 1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        font-size: 13px;
         font-weight: bold;
         z-index: 1;
+    }
+
+    .title, .username {
+        font-size: 20px;
+    }
+
+    .contact {
+        padding: 50px;
+    }
+
+    .links {
         line-height: 1.5;
-        transition: none;
     }
 }
