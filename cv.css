@@ -16,7 +16,7 @@ header, .Career, .Experience, .Qualifications, .Skills, .Objective, .Projects, .
     border: 1px solid #9bd2ff;
     margin: 50px auto;
     max-width: 1000px;
-    padding: 60px;
+    padding: 50px;
     background: linear-gradient(to top left, #d9edff, #ffffff);
     border-radius: 60px;
     box-shadow: 0 10px 20px rgba(21, 91, 148, 0.15);
@@ -98,6 +98,7 @@ header img[alt=selfie] {
 }
 .masonry-with-columns {
     columns: 3 200px;
+    margin-bottom: -30px;
 }
 
 .masonry-with-columns .project-item {
