@@ -93,11 +93,8 @@ header img[alt=selfie] {
     background-position: center center;
     font-family: 'Fredoka', sans-serif;
     transition: background 0.5s ease-in-out;
-    color: #fafafa
-}
-
-col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:hover, .col-6:hover, .col-5:hover {
-    background: linear-gradient(to right, rgb(0, 119, 255), rgb(185, 221, 255));
+    
+    color: #ffffff
 }
 
 .masonry-with-columns {
@@ -112,9 +109,8 @@ col-12:hover, .col-11:hover, .col-10:hover, .col-9:hover, .col-8:hover, .col-7:h
     margin: 0 1rem 1rem 0;
     width: 100%;
     font-family: system-ui;
-    font-weight: 700;
     font-size: 2rem;
-    border-radius: 30px;
+    border-radius: 2rem;
     overflow: hidden;
     background-color: #1d1d1d;
     transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
