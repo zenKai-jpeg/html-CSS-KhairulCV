@@ -192,7 +192,50 @@ header img[alt=selfie] {
 .masonry-with-columns div:nth-child(7) {height: 450px}
 .masonry-with-columns div:nth-child(8) {height: 765px}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    /* Apply dark tint by default on mobile */
+    .masonry-with-columns .project-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .masonry-with-columns .project-item::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: none; /* Disable transition */
+        opacity: 1; /* Ensure overlay is always visible */
+    }
+
+    .masonry-with-columns .project-item:hover::after {
+        background-color: rgba(0, 0, 0, 0.6); /* Ensure the dark overlay stays the same on hover */
+    }
+
+    .masonry-with-columns .project-item img {
+        transition: none; /* Disable image scaling transition */
+    }
+
+    .overlay-text {
+        opacity: 1; /* Keep overlay text visible */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        z-index: 2; /* Ensure text is above the dark overlay */
+        line-height: 1.5;
+    }
+
+    /* Other mobile-specific styles */
     body {
         zoom: 65%;
     }
@@ -226,20 +269,7 @@ header img[alt=selfie] {
 
     .masonry-with-columns .project-item {
         opacity: 1;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.3); /* Background color for consistency */
         margin: 0 0 2rem 0;
-    }
-
-    .overlay-text {
-        opacity: 1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 1rem;
-        font-weight: bold;
-        z-index: 1;
-        line-height: 1.5;
     }
 }
