@@ -195,8 +195,12 @@ header img[alt=selfie] {
         zoom: 65%;
     }
 
-    .company, .username, .title {
+    .company, .title {
         font-size: 1.5rem;
+    }
+
+    .username {
+        font-size: 1rem;
     }
 
     .links {
